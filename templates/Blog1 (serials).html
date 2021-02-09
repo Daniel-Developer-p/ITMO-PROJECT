@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Обсуждение фильмов</title>
+</head>
+
+<body>
+
+<main class="container">
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">Домой</button>
+        <button type="button" class="btn btn-primary">Назад</button>
+        <button type="button" class="btn btn-primary">Добавить фильм</button>
+    </div>
+
+    <br>
+    <h1>На данный момент доступны рецензии на следющие фильмы:</h1>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="card" style="width: 20rem;">
+            <img src="{{ url_for('static', 'serials.jpg') }}" alt="" class="rounded float-start">
+            <div class="card-body">
+                <h5 class="card-title">Ход королевы</h5>
+                <p class="card-text">Штат Кентукки, 1957 год. После смерти матери 9-летняя Элизабет Хармон остаётся сиротой и отправляется в католический приют. В этом заведении детям регулярно дают «витамины», и по совету другой подопечной Бет оставляет зелёные капсулы на ночь. Там же девочка знакомится с пожилым уборщиком Шайбелем, которого просит научить её играть в шахматы. Днём, сбежав со скучных занятий под предлогом помыть тряпку, Бет играет с мистером Шайбелем в его подвальной подсобке, а ночью, приняв зелёную капсулу, прокручивает шахматные партии на потолке общей спальни. Через несколько лет девочку удочерят, у неё начнётся совсем другая жизнь, но главную роль в ней будет играть любовь к шахматам.</p>
+                <a href="#" class="btn btn-primary">Перейти ко всем отзывам</a>
+            </div>
+        </div>
+
+        <!-- Смотри, добавлять фильмы суды нада, ибо иначе ничерта не работает. Вот так вот -->
+        <!-- Ну или в эту строчку, особо не принципиально -->
+        <!-- Урааа, оно адекватно (относительно) выводится на разных диагоналях -->
+
+    </div>
+
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous">
+</script>
+
+</body>
+
+</html>

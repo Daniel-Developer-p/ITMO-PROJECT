@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Обсуждение фильмов</title>
+</head>
+
+<body>
+
+<main class="container">
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">Домой</button>
+        <button type="button" class="btn btn-primary">Назад</button>
+        <button type="button" class="btn btn-primary">Добавить фильм</button>
+    </div>
+
+    <br>
+    <h1>На данный момент доступны рецензии на следющие фильмы:</h1>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="card" style="width: 20rem;">
+            <img src="{{ url_for('static', filename='cartoons.jpg') }}" alt="Фиксики. Большой секрет 2017" class="rounded float-start">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">Фиксики – маленькие добрые человечки, которые живут в машинах и приборах и заботятся о технике. Но люди не должны знать о фиксиках! Это БОЛЬШОЙ СЕКРЕТ! Фиксики находят способ перемещаться по электрическим проводам. Теперь они смогут мгновенно починить любой прибор, где бы он ни был! И тут недоработанное изобретение попадает к озорнику Файеру. В руках маленького фиксика оно становится причиной больших проблем. Искры, взрывы, разрушения, взбесившаяся техника – город на грани катастрофы! Фиксикам почти чудом удаётся её предотвратить. Но как сохранить их БОЛЬШОЙ СЕКРЕТ?!</p>
+                <a href="#" class="btn btn-primary">Перейти ко всем отзывам</a>
+            </div>
+        </div>
+
+        <!-- Смотри, добавлять фильмы суды нада, ибо иначе ничерта не работает. Вот так вот -->
+        <!-- Ну или в эту строчку, особо не принципиально -->
+        <!-- Урааа, оно адекватно (относительно) выводится на разных диагоналях -->
+
+    </div>
+
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous">
+</script>
+
+</body>
+
+</html>
